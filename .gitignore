@@ -104,3 +104,8 @@ ENV/
 # IDE settings
 .vscode/.envrc
 .direnv
+*~
+*.root
+*.npz
+*.dat
+*.pdf

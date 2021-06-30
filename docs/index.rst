@@ -7,6 +7,7 @@ Welcome to LS4GAN's documentation!
 
    readme
    installation
+   developers
    usage
    modules
    contributing

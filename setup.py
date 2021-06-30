@@ -2,6 +2,11 @@
 
 """The setup script."""
 
+ver_globals = {}
+with open("ls4gan/version.py") as fp:
+    exec(fp.read(), ver_globals)
+version = ver_globals["version"]
+
 from setuptools import setup, find_packages
 
 with open('README.rst') as readme_file:
@@ -16,7 +21,7 @@ test_requirements = ['pytest>=3', ]
 
 setup(
     author="LS4GAN Group",
-    author_email='ls4gan@bnl.gov',
+    author_email='bv@bnl.gov',
     python_requires='>=3.6',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -44,6 +49,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/ls4gan/ls4gan',
-    version='0.0.0',
+    version=version,
     zip_safe=False,
 )

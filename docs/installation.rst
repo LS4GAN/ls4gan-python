@@ -5,47 +5,66 @@ Installation
 ============
 
 
-Stable release
---------------
+.. note::
+
+   For now, this guide is intended for developers.  User-level
+   instructions will be provided later.
+
+
+Prepare environment
+-------------------
+
+You should work in a Python 3 environment which is well isolated from
+other Python projects.  There are many ways to do this.  For example:
+
+.. code-block:: console
+
+    $ python3.8 -m venv venv
+    $ source venv/bin/activate
+
+Repeat the second command when returning to the project.
+
+To tie the environment to a working directory and to automatically
+enter the environment when entering the directory, `direnv` may be
+used
+
+.. code-block:: console
+
+    $ echo layout python /usr/bin/python3.8 > .envrc
+    $ direnv allow
+
+
+Obtain Source
+-------------
 
 To install LS4GAN, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install ls4gan
+    $ git clone git@github.com:LS4GAN/ls4gan.git
+    $ cd ls4gan
 
-This is the preferred method to install LS4GAN, as it will always install the most recent stable release.
-
-If you don't have `pip`_ installed, this `Python installation guide`_ can guide
-you through the process.
-
-.. _pip: https://pip.pypa.io
-.. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
-
-
-From sources
-------------
-
-The sources for LS4GAN can be downloaded from the `Github repo`_.
-
-You can either clone the public repository:
+Install developer requirements
+------------------------------
 
 .. code-block:: console
 
-    $ git clone git://github.com/ls4gan/ls4gan
+    $ pip install -r requirements_dev.txt
 
-Or download the `tarball`_:
+Installing BATS (bash testing system) is optional.  See `BATS install page`_.
+
+.. _BATS install page: https://bats-core.readthedocs.io/en/stable/installation.html#installing-bats-from-source
+
+
+Install ls4gan for development
+------------------------------
+
+To install to allow running code directly from the source area 
 
 .. code-block:: console
 
-    $ curl -OJL https://github.com/ls4gan/ls4gan/tarball/master
+    $ pip install -e .
 
-Once you have a copy of the source, you can install it with:
-
-.. code-block:: console
-
-    $ python setup.py install
+Don't forget the "`.`".
 
 
-.. _Github repo: https://github.com/ls4gan/ls4gan
-.. _tarball: https://github.com/ls4gan/ls4gan/tarball/master
