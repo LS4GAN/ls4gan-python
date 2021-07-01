@@ -1,4 +1,4 @@
-#+title LS4GAN Example Example
+#+title: LS4GAN Example Example
 #+EXPORT_FILE_NAME: index.html
 #+setupfile: ../../other/setup-topic.org
 
