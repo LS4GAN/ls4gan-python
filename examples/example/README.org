@@ -1,0 +1,57 @@
+#+title LS4GAN Example Example
+#+EXPORT_FILE_NAME: index.html
+#+setupfile: ../../other/setup-topic.org
+
+* Overview
+
+This is an example of an example.
+
+It may be run directly by exporting this file (using Emacs) or each
+code block can be run by hand.
+
+* Import ~ls4gan~ Python module
+
+This package provides a main Python module called ~ls4gan~.  From it,
+Python code may access all functionality.
+
+#+begin_src python :exports both :results output
+  import ls4gan
+  print(ls4gan.version)
+#+end_src
+
+#+RESULTS:
+: 0.0.0
+
+* Discover ~ls4gan~ API modules
+
+#+begin_src python :exports both :results output
+  import ls4gan
+  names = [n for n in dir(ls4gan.api) if not n.startswith("__")]
+  print('ls4gan apis: ', ', '.join(names))
+#+end_src
+
+#+RESULTS:
+: ls4gan apis:  example
+
+* Run ~ls4gan~ command line program
+
+This package provides a main command line program called ~ls4gan~.
+Through it the user may exercise all high-level functionality.
+
+#+begin_src shell :exports both :results output code :wrap "example"
+  ls4gan
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Usage: ls4gan [OPTIONS] COMMAND [ARGS]...
+
+  LS4GAN main command line interface
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  version  Print the version
+#+end_example
+

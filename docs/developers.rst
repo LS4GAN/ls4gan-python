@@ -117,6 +117,19 @@ In particular, ``cli.py`` should **not** hold elaborately coded
 logic.  Factor such logic into a module and expose what is minimally
 required via the API.
 
+Make an example
+---------------
+
+We use sub directories in the source at ``examples/<topic>/`` to hold
+files that illustrate some topic or feature, etc.
+
+* Include a local README in markup of your choice.
+* Try to provide some automation to "replay" the example.  Consider https://snakemake.readthedocs.io or even a shell script.
+* Add an brief entry in the ``examples`` section of the documentation.
+
+See :ref:`examples` itself for details.
+
+
 Make a new CLI
 --------------
 

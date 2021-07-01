@@ -5,3 +5,4 @@ __email__ = 'ls4gan@bnl.gov'
 
 from ls4gan.version import version
 __version__ = version
+import ls4gan.api
