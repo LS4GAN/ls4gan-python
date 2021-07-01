@@ -1,0 +1,16 @@
+#+title: LS4GAN Python Package
+#+EXPORT_FILE_NAME: index.html
+#+setupfile: https://ls4gan.github.io/other/setup-page.org
+
+
+Python interface to LS4GAN training, tests, data preperation, etc.
+
+- [[https://ls4gan.github.io/][Main web site]]
+- [[https://ls4gan.readthedocs.io][Documentation]]
+- [[https://github.com/LS4GAN/ls4gan-python][Source]]
+- [[file:examples/index.org][Examples]]
+
+For now, this is a developer-oriented package.  User-oriented info to
+come.
+
+
