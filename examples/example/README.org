@@ -1,6 +1,6 @@
 #+title: LS4GAN Example Example
 #+EXPORT_FILE_NAME: index.html
-#+setupfile: ../../other/setup-topic.org
+#+setupfile: https://ls4gan.github.io/other/setup-example.org
 
 * Overview
 
